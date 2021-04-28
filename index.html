@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Security Protocol Sim</title>
+</head>
+<body>
+    <nav>
+        <span class="name">Security Protocol Simulator</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ssl">SSL</a></li>
+            <!-- <li><a href="#sso">SSO</a></li> -->
+            <li><a href="#contact">Team</a></li>
+        </ul>
+    </nav>
+    <div class="dropup">
+        <button class="dropbtn"><span class="nav-icon"></span></button>
+        <div class="dropup-content">
+          <a href="#home">Home</a>
+          <a href="#ssl">SSL</a>
+          <!-- <a href="#sso">SSO</a> -->
+          <a href="#contact">Team</a>
+        </div>
+    </div>
+
+    <div id="home">
+        <div id="profile">
+            <img src="./images/Security01.png" alt="Security Protocol" id="secureimg">
+            <br> <br>
+            <p style="color: #092834">
+                This website aims to explain 2 security protocols(SSL and SSO) using simple animations <br>
+            </p> <br>
+            <a href="#ssl"> <img src="./images/down.png" alt="down" id="down">
+        </div> <br>
+            
+            <br/> <br/> <br/>
+        </a> <br>
+    </div>
+
+    <div id="ssl">
+        <div class="blocks" style="color:#092834">
+            <h2>Let's dive into SSL</h2>
+            SSL (Secure Sockets Layer) and TLS(Transport Layer Security) are protocols for establishing authenticated and encrypted links between networked computers.<br/>
+            If the URL of a website starts with https instead of http then it is using SSL.<br/>
+            <br/>
+            
+            <button id="ssl_learn">Start Protocol</button>
+            <div id="ssl_anim_box" class="modal">
+                <div class="protocol_content">
+                    <span class="close" id="close1">&times;</span>
+                    
+                    <div class="anim_box">
+                        <div class="icon">
+                            <span class="fa fa-desktop fa-2x"></span>
+                            <span class="fa fa-server fa-2x"></span>
+                        </div>
+                        
+                        <div class="msg">
+                            <div id = 'moving_box' class="msg-content">
+                                This box will display what information is shared
+                            </div>
+                        </div>
+                        
+                        <div class="explain">
+                            Explanation
+                            <div id="message">Here the explanation of step will be given</div>
+
+                        </div>
+
+                        <button class="Previous" onclick="Go_Back()">Previous</button>
+                        <button class="Next" onclick="Proceed()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="im">
+            <img src="./images/ssl01.png" alt="SSL">
+        </div>
+    </div>
+
+    <!-- <div id="sso">
+        <div class="blocks">
+            <h2>SSO</h2>
+            Description to be added 
+        </div>
+        <div class="im">
+            <img src="" alt="SSO" class="avengers">
+        </div>
+    </div> -->
+
+    <!-- <div id="project">
+        <div class="blocks">
+            <h2>LDAP</h2>
+            Description to be added &lt; if other work gets completed on time proceed to this &gt;
+        </div>
+        <div class="im">
+            <img src="./images/Avengers5.jpg" alt="LDAP" class="avengers">
+        </div> -->
+
+        
+        <!-- <div class="container">
+            <div class="cards">
+                <div class="box"></div>
+            </div>
+            <div class="cards">
+                <div class="pic"><img src="./images/proj.jpg" alt=""></div>
+                This is the screenshot of an animated wheel
+            </div>
+            <div class="cards">
+                <div class="pic2"><img src="./images/back.jpeg" alt=""></div>
+            </div>
+        </div> -->
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="cards">
+                Akshat Vira
+            </div>
+            <div class="cards">
+                Atharva Warhade
+            </div>
+            <div class="cards">
+                Nived Kodavali
+            </div>
+            <div class="cards">
+                Shivendra Kumar
+            </div>
+        </div>
+
+        </div>
+
+        
+    </div>
+
+    <footer>
+        Contact Us: &nbsp;
+        <a href="https://www.facebook.com/akshat.vira.5"><span class="fa fa-facebook"></span></a>
+        <a href="https://github.com/ViraAkshat"><span class="fa fa-github"></span></a>
+        <!-- <a href="https://www.sololearn.com/Profile/8106689#">Sololearn</a> -->
+    </footer>
+
+    <!--JavaScript-->
+    <script src="./script.js"></script>
+</body>
+</html>
